@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Gestão de candidatos da aliança rebelde</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+	    <h3><label>Gestão de candidatos da aliança rebelde.</label></h3>
+      <div class="input-group">
+        <input placeholder="Escreva seu nome" type="text" class="js-nome form-control" required >
+	<input placeholder="Qual seu planeta" type="text" class="js-planeta form-control"> <br>
+	<input placeholder="Qual sua data de nascimento" type="date" class="js-nascimento form-control"> <br>
+
+    <label>Descreva qual a sua motivação para entrar na aliança:</label>
+    <textarea row="15" style="width: 35em" id="js-descricao" name="js-descricao"></textarea> <br>
+	<label> 
+        <button  @click="addItem" type="button">Salvar</button> 
+	<button  @click="addItem"  type="button">Carregar</button>
+        <button  @click="addItem" type="button">Editar</button>
+        <button  @click="addItem" type="button">Deletar</button>
+	</label>
+
+
+	<style>
+	body {
+  		background-image: url('star.JPG');
+		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: 100% 100%;
+	     }
+	</style>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+      </div>
+  </body>
+</html>
